@@ -15,7 +15,7 @@ public class AccountDetails {
 
     Scanner sc = new Scanner(System.in);
 
-    public void createAccount(){
+    public void createAccount() {
         System.out.println("Provide an account name: ");
         name = sc.next();
 
@@ -27,6 +27,12 @@ public class AccountDetails {
 
         System.out.println("Provide your start balance: ");
         balance = sc.nextLong();
+    }
+
+    public void depisit() {
+        System.out.println("What amount would you like to lodge?");
+        long amount = sc.nextLong();
+        balance = balance + amount;
     }
 
 }
